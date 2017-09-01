@@ -1,4 +1,4 @@
-# Minimal request instalasi software
+# Minimum request instalasi software
 * JDK 8 (Java Library)
 * NodeJS 6.x LTS (Anular 2 Required)
 * Angular CLI (Angular 2 Required)
