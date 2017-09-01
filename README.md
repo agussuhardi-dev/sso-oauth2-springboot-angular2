@@ -28,3 +28,7 @@
 * if you has have installed the required software, you can follow this step
 * run ``` mvn clean spring-boot:run ``` for 3 java project
 * run ``` npm install ```then ``` ng serve --proxy  proxy.conf.json ```
+
+
+
+[a link] (https://www.youtube.com/watch?v=gTowwVLBbdw)
