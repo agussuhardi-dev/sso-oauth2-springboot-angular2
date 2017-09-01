@@ -1,6 +1,6 @@
 # Minimum request instalasi software
 * JDK 8 (Java Library)
-* NodeJS 6.x LTS (Anular 2 Required)
+* NodeJS 6.x LTS (Angular 2 Required)
 * Angular CLI (Angular 2 Required)
 * Maven
 * MariaDB (databases, this optional databases. if you want to change database your set to application.properties)
