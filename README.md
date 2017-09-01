@@ -8,6 +8,7 @@
 * Angular CLI (Angular 2 Required)
 * Maven
 * MariaDB (databases, this optional databases. if you want to change database your set to application.properties)
+* GIT (optional- cloning project)
 
 
 # Setting
