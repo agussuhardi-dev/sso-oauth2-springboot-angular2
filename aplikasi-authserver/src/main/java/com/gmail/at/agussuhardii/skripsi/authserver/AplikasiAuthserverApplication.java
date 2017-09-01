@@ -35,11 +35,11 @@ public class AplikasiAuthserverApplication {
 
 	private ApiInfo apiInfo() {
 		ApiInfo apiInfo = new ApiInfo(
-				"Aplikasi Gadai Online",
-				"API untuk melakukan Gadai Online.",
+				"Aplikasi SSO",
+				"API untuk melakukan Multi Login.",
 				"Syarat dan Ketentuan",
 				"Silahkan digunakan sewajarnya",
-				new Contact("ArtiVisi Intermedia", "http://artivisi.com", "info@artivisi.com"),
+				new Contact("Agus Suhardi", "fb.com/agussuhardii", "agus.suhardii@gmail.com"),
 				"Apache License 2.0",
 				"https://www.apache.org/licenses/LICENSE-2.0");
 		return apiInfo;

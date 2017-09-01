@@ -1,5 +1,6 @@
 aplikasi-frontend/node_modules
 .idea
+.gitignore
 api-penjualan/target
 api-penyewaan/target
 aplikasi-authserver/target
