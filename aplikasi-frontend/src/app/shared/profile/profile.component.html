@@ -1,0 +1,16 @@
+
+
+
+<h3>{{auth.getUserInfo().fullname}}</h3>
+<table class="table table-responsive">
+  <thead>
+  <td>Hak Akses</td>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let p of userData.content">
+    <td>{{p.permission}}</td>
+  </tr>
+
+  </tbody>
+</table>

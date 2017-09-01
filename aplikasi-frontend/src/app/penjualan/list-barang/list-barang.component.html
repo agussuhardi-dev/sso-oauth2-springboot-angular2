@@ -1,0 +1,84 @@
+<h3>
+  Daftar Barang
+</h3>
+<div>
+<a *ngIf="userData.content?.length >1" routerLink="/barang/form" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> </a>
+
+</div>
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <td>KODE</td>
+    <td>NAMA</td>
+    <td>HARGA</td>
+    <td>JUMLAH</td>
+    <td *ngIf="userData.content?.length >1">#</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor=" let b of dataBarang.content">
+    <td>{{b.kode}}</td>
+    <td>{{b.nama}}</td>
+    <td>{{b.harga}}</td>
+    <td>{{b.jumlah}}</td>
+    <td *ngIf="userData.content?.length >1">
+      <button (click)="delete(b.kode)" class="btn"><span class="glyphicon glyphicon-trash"></span> </button>
+      <button class="btn btn-default" (click)="showChildModal(b)"><span class="glyphicon glyphicon-pencil"></span></button>
+
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Edit Barang</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="hideChildModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="kode">Kode</label>
+            <input type="text" class="form-control" id="kode" placeholder="Kode" disabled name="kode" [(ngModel)]="data.kode">
+          </div>
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" [(ngModel)]="data.nama">
+          </div>
+          <div class="form-group">
+            <label for="harga">Harga</label>
+            <input type="number" class="form-control" id="harga" placeholder="Harga" name="harga" [(ngModel)]="data.harga">
+          </div>
+          <div class="form-group">
+            <label for="jumlah">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" placeholder="Jumlah" name="jumlah" [(ngModel)]="data.jumlah">
+          </div>
+          <div class="form-group">
+            <label for="keterangan">Keterangan</label>
+            <textarea class="form-control" id="keterangan" rows="3" placeholder="Keterangan" name="keterangan" [(ngModel)]="data.keterangan"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default" (click)="simpan()">Simpan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

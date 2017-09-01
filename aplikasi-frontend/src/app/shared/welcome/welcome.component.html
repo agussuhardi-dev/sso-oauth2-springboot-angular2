@@ -1,0 +1,26 @@
+<h3>
+  {{title}}
+</h3>
+
+
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <td>KODE</td>
+    <td>NAMA</td>
+    <td>HARGA</td>
+    <td>JUMLAH</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor=" let b of dataBarang.content">
+    <td>{{b.kode}}</td>
+    <td>{{b.nama}}</td>
+    <td>{{b.harga}}</td>
+    <td>{{b.jumlah}}</td>
+
+  </tr>
+  </tbody>
+</table>
+
+

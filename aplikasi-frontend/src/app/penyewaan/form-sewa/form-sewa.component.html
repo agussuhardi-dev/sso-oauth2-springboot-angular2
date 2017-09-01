@@ -1,0 +1,25 @@
+<h3>Sewa Baru</h3>
+<a routerLink="/sewa/list" class="btn btn-success"><span class="glyphicon glyphicon-align-justify"></span> </a>
+<form>
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="text" class="form-control" id="id" placeholder="ID Automatic" disabled name="kode" [(ngModel)]="data.id">
+  </div>
+  <div class="form-group">
+    <label for="nama">Nama</label>
+    <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" [(ngModel)]="data.nama">
+  </div>
+  <div class="form-group">
+    <label for="jenis">Nama</label>
+    <input type="text" class="form-control" id="jenis" placeholder="Jenis" name="jenis" [(ngModel)]="data.jenis">
+  </div>
+  <div class="form-group">
+    <label for="harga">Harga</label>
+    <input type="number" class="form-control" id="harga" placeholder="Harga" name="harga" [(ngModel)]="data.harga">
+  </div>
+  <div class="form-group">
+    <label for="keterangan">Keterangan</label>
+    <textarea class="form-control" id="keterangan" rows="3" placeholder="Keterangan" name="keterangan" [(ngModel)]="data.keterangan"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default" (click)="simpan()">Simpan</button>
+</form>

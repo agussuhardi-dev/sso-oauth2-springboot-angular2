@@ -1,0 +1,12 @@
+<h3>Masuk</h3>
+<form>
+  <div class="form-group">
+    <label for="username">Nama Pengguna</label>
+    <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" placeholder="user name">
+  </div>
+  <div class="form-group">
+    <label for="password">kata Sandi</label>
+    <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-default" (click)="login()">Masuk</button>
+</form>

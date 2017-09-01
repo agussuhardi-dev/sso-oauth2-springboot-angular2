@@ -1,0 +1,5 @@
+aplikasi-frontend/node_modules
+.idea
+api-penjualan/target
+api-penyewaan/target
+aplikasi-authserver/target

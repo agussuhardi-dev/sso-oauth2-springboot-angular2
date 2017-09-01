@@ -1,0 +1,14 @@
+{
+  "/oauth/**": {
+    "target": "http://localhost:10000",
+    "secure": false
+	},
+	"/penjualan/api/**" : {
+		"target": "http://localhost:20000",
+	    "secure": false
+	},
+  "/penyewaan/api/**" : {
+    "target": "http://localhost:30000",
+    "secure": false
+  }
+}
